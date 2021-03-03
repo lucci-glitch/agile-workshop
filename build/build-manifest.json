@@ -1,0 +1,45 @@
+{
+  "inputs": {
+    "index.html.inline.0.css": {
+      "bytes": 125,
+      "imports": []
+    },
+    "js/translators.js": {
+      "bytes": 2328,
+      "imports": []
+    },
+    "js/cool-app.js": {
+      "bytes": 1386,
+      "imports": [
+        {
+          "path": "js/translators.js",
+          "kind": "import-statement"
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "../~~bundle~~/index.html.inline.0.css": {
+      "imports": [],
+      "inputs": {
+        "index.html.inline.0.css": {
+          "bytesInOutput": 70
+        }
+      },
+      "bytes": 71
+    },
+    "../~~bundle~~/js/cool-app.js": {
+      "imports": [],
+      "exports": [],
+      "inputs": {
+        "js/translators.js": {
+          "bytesInOutput": 609
+        },
+        "js/cool-app.js": {
+          "bytesInOutput": 976
+        }
+      },
+      "bytes": 1586
+    }
+  }
+}

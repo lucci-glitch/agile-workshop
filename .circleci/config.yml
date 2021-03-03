@@ -8,6 +8,10 @@ workflows:
       - build-and-deploy:
           requires:
             - node/test
+          filters:
+            branches:
+              only:
+                - main
 
 jobs:
   build-and-deploy:

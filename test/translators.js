@@ -22,5 +22,9 @@ describe("Translators", function () {
             const input = "Hejsan hoppsan!"
             assert.strictEqual(toNormal(toRobber(input)), input)
         })
+        it("should work for inregular input", function () {
+            const input = "Hejsan hoppsan!"
+            assert.strictEqual(toNormal(input), input)
+        })
     })
 })
